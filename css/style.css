@@ -91,6 +91,7 @@ button:hover{
 header .my-profile{
   display: flex;
   margin: 45px 0 20px 0;
+  cursor: pointer;
 }
 
 header .my-profile .photo-profile{

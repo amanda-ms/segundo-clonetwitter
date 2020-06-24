@@ -308,3 +308,26 @@ header .my-profile .infos-profile .username{
   border-radius: 20px;
   border: 1px solid rgb(99, 106, 112, .3);
 }
+
+.content main .tweets-publics .tweets-conteudo .tweets-publics-icon{
+  display: flex;
+  margin: 10px 10px 10px 0;
+}
+
+.content main .tweets-publics .tweets-conteudo .tweets-publics-icon .tweets-publics-icon-name{
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.content main .tweets-publics .tweets-conteudo .tweets-publics-icon .tweets-publics-icon-name img{
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.content main .tweets-publics .tweets-conteudo .tweets-publics-icon .tweets-publics-icon-name .tweets-icon{
+  color: var(--nomes-secundario-color);
+  margin-left: 10px;
+  font-size: 13px;
+}

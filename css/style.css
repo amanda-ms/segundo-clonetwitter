@@ -330,4 +330,5 @@ header .my-profile .infos-profile .username{
   color: var(--nomes-secundario-color);
   margin-left: 10px;
   font-size: 13px;
+  cursor: pointer;
 }

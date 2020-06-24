@@ -26,7 +26,7 @@ body{
   display: flex;
   flex-direction: column;
   width: 18%;
-  border-right: .5px solid var(--nomes-secundario-color);
+  border-right: .5px solid rgb(99, 106, 112, .3);
   margin-left: 5%;
   position: fixed;
 }
@@ -54,17 +54,23 @@ body{
   font-size: 19px;
 }
 
+.content header nav a:hover{
+  border-radius: 25px;
+  width: auto;
+  color: rgb(224, 36, 94);
+}
+
 .content header nav ul li a .icon-nav img{
   width: 23px;
   height: 23px;
-  margin: 10px 15px 10px 0;
+  margin: 10px 17px 10px 0;
 }
 
 .content header nav ul li a .name-nav{
-  padding-top: 11px;
+  padding-top: 9px;
 }
 
-button{
+.button-header{
   border: none;
   width: 215px;
   height: 50px;
@@ -117,27 +123,32 @@ header .my-profile .infos-profile .username{
 .content main{
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--nomes-secundario-color);
-  width: 40%;
+  border-right: 1px solid rgb(99, 106, 112, .3);
+  width: 45%;
   height: 80%;
-  background-color: rgb(156, 151, 151);
+  margin-left: 23%;
 }
 
 .content main h1{
   color: rgb(255, 255, 255, .8);
-  font-size: 20px;
-  font-weight: 900;
-  border-bottom: var(--nomes-secundario-color);
+  font-size: 19px;
+  font-weight: 800;
+  border-bottom: 1px solid rgb(99, 106, 112, .3);
+  padding: 10px 0 10px 15px;
+  cursor: pointer;
 }
+
 
 .content main .my-message{
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  border-bottom: 10px solid rgb(99, 106, 112, .3);
+  padding: 10px 15px 5px 15px;
 }
 
 .content main .my-message .photo-my-profile{
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
@@ -147,21 +158,58 @@ header .my-profile .infos-profile .username{
   height: 100%;
 }
 
-.content main .my-message .my-message-text{
+.content main .conteudo-my-message{
   display: flex;
+  flex-direction: column;
+}
+
+.content main .conteudo-my-message .my-message .my-message-text{
+  display: flex;
+  flex-direction: row;
 }
 
 .content main .my-message .my-message-text input{
   border: none;
+  background: black;
+  outline: 0;
+  padding: 10px;
+  margin: 5px 10px 0 5px;
+  width: 500px;
+  height: 50px;
+  font-size: 20px;
+}
+.content main .my-message .my-message-icons-button{
+  display: flex;
+  margin: 13px 0 0 15px;
+  justify-content: space-between;
 }
 
-/* .content main .my-message .my-message-icons-button{
+.content main .my-message .my-message-icons-button ul{
   display: flex;
-} */
+  margin-top: 10px;
+}
+
+.content main .my-message .my-message-icons-button ul li{
+  padding-right: 18px;
+}
 
 .content main .my-message .my-message-icons-button ul li .my-message-icons img{
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
+}
+
+.button-padrao{
+  border: none;
+  width: 90px;
+  height: 40px;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  background: rgb(224, 36, 94);
+  cursor: pointer;
+  transition: .5s background;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 

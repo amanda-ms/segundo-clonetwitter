@@ -250,18 +250,18 @@ header .my-profile .infos-profile .username{
  width: calc(100% - 50px);
 }
 
-.content main .tweets-publics .tweets-conteudo .infos-person-principal-icon{
+.infos-person-principal-icon{
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.content main .tweets-publics .tweets-conteudo .infos-person{
+.infos-person{
   display: flex;
   align-content: space-between;
-  margin-right: 293px;
 }
 
-.content main .tweets-publics .tweets-conteudo .infos-person .name{
+.name{
   color: var(--nomes-principal-color);
   margin-right: 5px;
   cursor: pointer;
@@ -272,19 +272,19 @@ header .my-profile .infos-profile .username{
   color: var(--nomes-principal-color);
 }
 
-.content main .tweets-publics .tweets-conteudo .infos-person .username{
+.username{ 
   color: var(--nomes-secundario-color);
   cursor: pointer;
   display: flex;
   margin-right: 5px;
 }
 
-.content main .tweets-publics .tweets-conteudo .infos-person .hour{
+.hour{ 
   color: var(--nomes-secundario-color);
   cursor: pointer;
 }
 
-.content main .tweets-publics .tweets-conteudo .infos-person .hour:hover{
+.hour:hover{ 
   text-decoration: underline;
   color: var(--nomes-secundario-color);
 }
@@ -331,4 +331,28 @@ header .my-profile .infos-profile .username{
   margin-left: 10px;
   font-size: 13px;
   cursor: pointer;
+}
+
+.tweets-conteudo .tweets-conteudo-rt{
+  display: flex;
+}
+
+.tweet-conteudo-rt-infos{
+  display: flex;
+}
+
+.tweet-conteudo-rt-infos figure{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.tweet-conteudo-rt-infos figure .photo-rt{
+  width: 100%;
+  height: 100%;
+}
+
+.tweets-conteudo-rt p{
+  color: rgb(255, 255, 255, .8);
 }

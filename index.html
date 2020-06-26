@@ -1,218 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Twitter</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Twitter</title>
 
-  <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-</head>
+  <body>
+    <div class="content">
+      <header>
+        <figure class="icon-twitter">
+          <img src="icons/twitter.svg" />
+        </figure>
 
-<body>
-
-<div class="content">
-  <header>
-    <figure class="icon-twitter">
-      <img src="icons/twitter.svg">
-    </figure>
-
-    <nav>
-      <ul>
-        <li>
-          <a href="index.html">
-            <figure class="icon-nav">
-              <img  src="icons/home-run.svg">
-            </figure>
-            <strong class="name-nav">Página Inicial</strong>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <figure class="icon-nav">
-              <img src="icons/hashtag.svg">
-            </figure>
-            <strong class="name-nav">Explorar</strong> 
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <figure class="icon-nav">
-              <img src="icons/ring.svg">
-            </figure>
-            <strong class="name-nav">Notificações</strong> 
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <figure class="icon-nav">
-              <img src="icons/email.svg">
-            </figure>
-            <strong class="name-nav">Mensagens</strong> 
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <figure class="icon-nav">
-              <img src="icons/bookmark.svg">
-            </figure>
-            <strong class="name-nav">Itens salvos</strong> 
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <figure class="icon-nav">
-              <img src="icons/list.svg">
-            </figure>
-            <strong class="name-nav">Listas</strong>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <figure class="icon-nav">
-              <img src="icons/user.svg">
-            </figure>
-            <strong class="name-nav">Perfil</strong>
-          </a>
-        </li>
-
-        <li>
-          <a href="#">
-            <figure class="icon-nav">
-              <img src="icons/more.svg">
-            </figure>
-            <strong class="name-nav">Mais</strong>
-          </a>
-        </li>
-
-      </ul>
-    </nav>
-
-    <button class="button-header">Tweetar</button>
-
-    <div class="my-profile">
-      <figure class="photo-profile">
-        <img src="images/profile-amanda.jpg">
-      </figure>
-      <div class="infos-profile">
-        <strong class="name">Amandita</strong>
-        <span class="username">@ams_amandaa</span>
-      </div>
-    </div>
-
-  </header>
-
-  <main>
-    <h1>Página Inicial</h1>
-
-    <section class="my-message">
-      
-      <figure class="photo-my-profile">
-        <img src="images/profile-amanda.jpg">
-      </figure>
-
-      <div class="conteudo-my-message">
-        <div class="my-message-text">
-          <input type="text" class="message" placeholder="O que está acontecendo ?">
-        </div>
-
-        <div class="my-message-icons-button">
+        <nav>
           <ul>
             <li>
-              <figure class="my-message-icons">
-                <img src="icons/photo.svg">
-              </figure>
+              <a href="index.html">
+                <figure class="icon-nav">
+                  <img src="icons/home-run.svg" />
+                </figure>
+                <strong class="name-nav">Página Inicial</strong>
+              </a>
             </li>
 
             <li>
-              <figure class="my-message-icons">
-                <img src="icons/gif.svg">
-              </figure>
+              <a href="#">
+                <figure class="icon-nav">
+                  <img src="icons/hashtag.svg" />
+                </figure>
+                <strong class="name-nav">Explorar</strong>
+              </a>
             </li>
 
             <li>
-              <figure class="my-message-icons">
-                <img src="icons/bar-chart.svg">
-              </figure>
+              <a href="#">
+                <figure class="icon-nav">
+                  <img src="icons/ring.svg" />
+                </figure>
+                <strong class="name-nav">Notificações</strong>
+              </a>
             </li>
 
             <li>
-              <figure class="my-message-icons">
-                <img src="icons/smile.svg">
-              </figure>
+              <a href="#">
+                <figure class="icon-nav">
+                  <img src="icons/email.svg" />
+                </figure>
+                <strong class="name-nav">Mensagens</strong>
+              </a>
             </li>
 
             <li>
-              <figure class="my-message-icons">
-                <img src="icons/event.svg">
-              </figure>
+              <a href="#">
+                <figure class="icon-nav">
+                  <img src="icons/bookmark.svg" />
+                </figure>
+                <strong class="name-nav">Itens salvos</strong>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <figure class="icon-nav">
+                  <img src="icons/list.svg" />
+                </figure>
+                <strong class="name-nav">Listas</strong>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <figure class="icon-nav">
+                  <img src="icons/user.svg" />
+                </figure>
+                <strong class="name-nav">Perfil</strong>
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <figure class="icon-nav">
+                  <img src="icons/more.svg" />
+                </figure>
+                <strong class="name-nav">Mais</strong>
+              </a>
             </li>
           </ul>
+        </nav>
 
-          <button class="button-padrao">Tweetar</button>
-        </div>
-      </div>
-    </section>
+        <button class="button-header">Tweetar</button>
 
-    <section class="tweets-publics">
-
-      <figure class="tweets-publics-photo">
-        <img src="images/profile-favscenes.jpg">
-      </figure>
-
-      <div class="tweets-conteudo">
-        <div class="infos-person-principal-icon">
-          <div class="infos-person">
-            <strong class="name">Favs Scenes</strong>
-            <span class="username">@favsscenes - </span>
-            <span class="hour">3h</span>
-          </div>
-          <img src="icons/download.svg" class="infos-person-icon">
-        </div>
-
-        <div class="tweet-conteudo-secundario">
-          <p>Harry Potter and the Order of the Phoenix, 2007</p>
-        </div>
-
-        <img src="images/conteudo-favscenes.jpg" class="photo-tweet">
-
-        <div class="tweets-publics-icon">
-          <div class="tweets-publics-icon-name">
-              <img src="icons/comment.svg" class="efect efectone">
-              <span class="tweets-icon">26</span>
-            </div>
-
-            <div class="tweets-publics-icon-name">
-              <img src="icons/retweet.svg" class="efect efecttwo">
-              <span class="tweets-icon">152</span>
-            </div>
-
-            <div class="tweets-publics-icon-name">
-              <img src="icons/heart.svg" class="efect efectthree">
-              <span class="tweets-icon">589</span>
-            </div>
-
-            <div class="tweets-publics-icon-name">
-              <img src="icons/upload.svg"class="efect efectfour">
-              <span class="tweets-icon"></span>
+        <div class="my-profile">
+          <figure class="photo-profile">
+            <img src="images/profile-amanda.jpg" />
+          </figure>
+          <div class="infos-profile">
+            <strong class="name">Amandita</strong>
+            <span class="username">@ams_amandaa</span>
           </div>
         </div>
-      </div>
-    </section>
+      </header>
 
-  </main>
+      <main>
+        <h1>Página Inicial</h1>
 
-  <!-- <section>
+        <section class="my-message">
+          <figure class="photo-my-profile">
+            <img src="images/profile-amanda.jpg" />
+          </figure>
+
+          <div class="conteudo-my-message">
+            <div class="my-message-text">
+              <input
+                type="text"
+                class="message"
+                placeholder="O que está acontecendo ?"
+              />
+            </div>
+
+            <div class="my-message-icons-button">
+              <ul>
+                <li>
+                  <figure class="my-message-icons">
+                    <img src="icons/photo.svg" />
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="my-message-icons">
+                    <img src="icons/gif.svg" />
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="my-message-icons">
+                    <img src="icons/bar-chart.svg" />
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="my-message-icons">
+                    <img src="icons/smile.svg" />
+                  </figure>
+                </li>
+
+                <li>
+                  <figure class="my-message-icons">
+                    <img src="icons/event.svg" />
+                  </figure>
+                </li>
+              </ul>
+
+              <button class="button-padrao">Tweetar</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="tweets-publics">
+          <figure class="tweets-publics-photo">
+            <img src="images/profile-favscenes.jpg" />
+          </figure>
+
+          <div class="tweets-conteudo">
+            <div class="infos-person-principal-icon">
+              <div class="infos-person">
+                <strong class="name">Favs Scenes</strong>
+                <span class="username">@favsscenes - </span>
+                <span class="hour">3h</span>
+              </div>
+              <img src="icons/download.svg" class="infos-person-icon" />
+            </div>
+
+            <div class="tweet-conteudo-secundario">
+              <p>Harry Potter and the Order of the Phoenix, 2007</p>
+            </div>
+
+            <img src="images/conteudo-favscenes.jpg" class="photo-tweet" />
+
+            <div class="tweets-publics-icon">
+              <div class="tweets-publics-icon-name">
+                <img src="icons/comment.svg" class="efect efectone" />
+                <span class="tweets-icon">26</span>
+              </div>
+
+              <div class="tweets-publics-icon-name">
+                <img src="icons/retweet.svg" class="efect efecttwo" />
+                <span class="tweets-icon">152</span>
+              </div>
+
+              <div class="tweets-publics-icon-name">
+                <img src="icons/heart.svg" class="efect efectthree" />
+                <span class="tweets-icon">589</span>
+              </div>
+
+              <div class="tweets-publics-icon-name">
+                <img src="icons/upload.svg" class="efect efectfour" />
+                <span class="tweets-icon"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="tweets-publics">
+          <figure class="tweets-publics-photo">
+            <img src="images/profile-rocketseat.jpg" />
+          </figure>
+
+          <div class="tweets-conteudo">
+            <div class="infos-person-principal-icon">
+              <div class="infos-person">
+                <strong class="name">Rocketseat</strong>
+                <span class="username">@rocketseat - </span>
+                <span class="hour">2h</span>
+              </div>
+              <img src="icons/download.svg" class="infos-person-icon" />
+            </div>
+
+            <div class="tweet-conteudo-secundario">
+              <p>
+                Pra quem perguntava sobre qual era a música tema que tocou na
+                RSXP, dá uma olhadinha aqui!
+              </p>
+            </div>
+
+            <div class="tweet-conteudo-rt">
+              <div class="tweet-conteudo-rt-infos">
+                <figure>
+                  <img src="images/profile-minatti.jpg" class="photo-rt" />
+                </figure>
+                <strong class="name">MinattiLeonardo</strong>
+                <span class="username">@MinattiLeonardo -</span>
+                <span class="hour">3h</span>
+              </div>
+              <p>Finalmente postei!!!Coração azul</p>
+              <br />
+              <p>
+                Aqui tem a música que eu fiz para o evento da @rocketseat ano
+                passado, o RSXP. Criei a música em parceria com o produtor
+                @rafahrossetto. O resultado ficou melhor do que eu esperava,
+                rossetão é monstro!
+              </p>
+              <br />
+              <p>Are You Ready for Launch?</p>
+            </div>
+
+            <div class="tweets-publics-icon">
+              <div class="tweets-publics-icon-name">
+                <img src="icons/comment.svg" class="efect efectone" />
+                <span class="tweets-icon">3</span>
+              </div>
+
+              <div class="tweets-publics-icon-name">
+                <img src="icons/retweet.svg" class="efect efecttwo" />
+                <span class="tweets-icon">2</span>
+              </div>
+
+              <div class="tweets-publics-icon-name">
+                <img src="icons/heart.svg" class="efect efectthree" />
+                <span class="tweets-icon">67</span>
+              </div>
+
+              <div class="tweets-publics-icon-name">
+                <img src="icons/upload.svg" class="efect efectfour" />
+                <span class="tweets-icon"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- <section>
 
   </section> -->
-</div> 
-
-</body>
-
+    </div>
+  </body>
 </html>

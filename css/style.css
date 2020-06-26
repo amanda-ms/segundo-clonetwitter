@@ -22,7 +22,7 @@ body{
 
 /* -------------------------------- HEADER -------------------------------- */
 
-.content header{
+header{
   display: flex;
   flex-direction: column;
   width: 18%;
@@ -31,11 +31,11 @@ body{
   position: fixed;
 }
 
-.content header .icon-twitter{
+.icon-twitter{
   display: flex;
 }
 
-.content header .icon-twitter img{
+.icon-twitter img{
   width: 30px;
   height: 30px;
   margin: 12px 0 15px 0;
@@ -46,7 +46,7 @@ body{
   flex-direction: column;
 }
 
-.content header nav a{
+header nav a{
   display: flex;
   text-decoration: none;
   color: var(--nomes-principal-color);
@@ -54,7 +54,7 @@ body{
   font-size: 19px;
 }
 
-.content header nav a:hover{
+header nav a:hover{
   border-radius: 25px;
   width: auto;
   color: rgb(224, 36, 94);
@@ -62,13 +62,13 @@ body{
   padding: 5px; */
 }
 
-.content header nav ul li a .icon-nav img{
+.icon-nav img{
   width: 23px;
   height: 23px;
   margin: 10px 17px 10px 0;
 }
 
-.content header nav ul li a .name-nav{
+.name-nav{
   padding-top: 9px;
 }
 
@@ -90,38 +90,32 @@ button:hover{
   background-color: rgb(196, 33, 84);
 }
 
-header .my-profile{
+.my-profile{
   display: flex;
   margin: 45px 0 20px 0;
   cursor: pointer;
 }
 
-/* header .my-profile:hover{
-  background: rgb(224, 36, 94, .1);
-  border-radius: 25px;
-  padding: 5px;
-} */
-
-header .my-profile .photo-profile{
+.photo-profile{
   width: 40px;
   height: 40px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-header .my-profile .photo-profile img{
+.photo-profile img{
   width: 100%;
   height: 100%;
 }
 
-header .my-profile .infos-profile{
+.infos-profile{
   display: flex;
   flex-direction: column;
   color: var(--nomes-principal-color);
   padding-left: 10px;
 }
 
-header .my-profile .infos-profile .username{
+.username{
   color: var(--nomes-secundario-color);
 }
 
@@ -129,7 +123,7 @@ header .my-profile .infos-profile .username{
 
 /* --------------------------------- MAIN --------------------------------- */
 
-.content main{
+main{
   display: flex;
   flex-direction: column;
   border-right: 1px solid rgb(99, 106, 112, .3);
@@ -138,46 +132,59 @@ header .my-profile .infos-profile .username{
   margin-left: 23%;
 }
 
-.content main h1{
+.first-section{
+  display: flex;
+  border-bottom: 1px solid rgb(99, 106, 112, .3);
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 2px;
+}
+
+.first-section h1{
   color: rgb(255, 255, 255, .8);
   font-size: 19px;
   font-weight: 800;
-  border-bottom: 1px solid rgb(99, 106, 112, .3);
   padding: 10px 0 10px 15px;
   cursor: pointer;
 }
 
+.first-section-icon img{
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+}
 
-.content main .my-message{
+
+.my-message{
   display: flex;
   /* flex-direction: column; */
   border-bottom: 10px solid rgb(99, 106, 112, .3);
-  padding: 10px 15px 5px 15px;
+  padding: 10px 15px 0 15px;
 }
 
-.content main .my-message .photo-my-profile{
+.photo-my-profile{
   width: 50px;
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.content main .my-message .photo-my-profile img{
+.photo-my-profile img{
   width: 100%;
   height: 100%;
 }
 
-.content main .conteudo-my-message{
+.conteudo-my-message{
   display: flex;
   flex-direction: column;
 }
 
-.content main .conteudo-my-message .my-message .my-message-text{
+.my-message-text{
   display: flex;
   flex-direction: row;
 }
 
-.content main .my-message .my-message-text input{
+.my-message-text input{
   border: none;
   background: black;
   outline: 0;
@@ -188,23 +195,23 @@ header .my-profile .infos-profile .username{
   font-size: 20px;
   color: white;
 }
-.content main .my-message .my-message-icons-button{
+.my-message-icons-button{
   display: flex;
-  margin: 13px 0 0 15px;
+  margin: 10px 0 0 15px;
   justify-content: space-between;
 }
 
-.content main .my-message .my-message-icons-button ul{
+.my-message-icons-button ul{
   display: flex;
   margin-top: 10px;
 }
 
-.content main .my-message .my-message-icons-button ul li{
+.my-message-icons-button ul li{
   padding-right: 18px;
   cursor: pointer;
 }
 
-.content main .my-message .my-message-icons-button ul li .my-message-icons img{
+.my-message-icons img{
   width: 20px;
   height: 20px;
 }
@@ -225,25 +232,25 @@ header .my-profile .infos-profile .username{
 
 /* --------------------------------- SECTION TWEETS --------------------------------- */
 
-.content main .tweets-publics{
+.tweets-publics{
   display: flex;
   padding: 10px 15px 0 15px;
   border-bottom: 1px solid rgb(99, 106, 112, .3);
 }
 
-.content main .tweets-publics .tweets-publics-photo{
+.tweets-publics-photo{
   width: 50px;
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
 }
 
-.content main .tweets-publics .tweets-publics-photo img{
+.tweets-publics-photo img{
   width: 100%;
   height: 100%;
 }
 
-.content main .tweets-publics .tweets-conteudo {
+.tweets-conteudo {
  padding-left: 10px;
  display: flex;
  flex-direction: column;
@@ -267,7 +274,7 @@ header .my-profile .infos-profile .username{
   cursor: pointer;
 }
 
-.content main .tweets-publics .tweets-conteudo .infos-person .name:hover{
+.infos-person .name:hover{
   text-decoration: underline;
   color: var(--nomes-principal-color);
 }
@@ -289,56 +296,62 @@ header .my-profile .infos-profile .username{
   color: var(--nomes-secundario-color);
 }
 
-.content main .tweets-publics .tweets-conteudo .infos-person-principal-icon img{
+.infos-person-principal-icon img{
   width: 11px;
   height: 11px;
   cursor: pointer;
 }
 
-.content main .tweets-publics .tweets-conteudo .tweet-conteudo-secundario{
+.tweet-conteudo-secundario{
   margin: 3px 0 10px 0 ;
 }
 
-.content main .tweets-publics .tweets-conteudo .tweet-conteudo-secundario p{
+/* .tweet-conteudo-secundario*/ p{ 
   color: rgb(255, 255, 255, .8);
 }
 
-.content main .tweets-publics .tweets-conteudo .photo-tweet{
+.photo-tweet{
   width: 100%;
   border-radius: 20px;
   border: 1px solid rgb(99, 106, 112, .3);
 }
 
-.content main .tweets-publics .tweets-conteudo .tweets-publics-icon{
+.tweets-publics-icon{
   display: flex;
+  justify-content: space-between;
   margin: 10px 10px 10px 0;
+  max-width: 425px;
 }
 
-.content main .tweets-publics .tweets-conteudo .tweets-publics-icon .tweets-publics-icon-name{
+.tweets-publics-icon-name{
   display: flex;
   align-items: center;
-  margin-right: 80px;
 }
 
-.content main .tweets-publics .tweets-conteudo .tweets-publics-icon .tweets-publics-icon-name img{
+.tweets-publics-icon-name img{
   width: 18px;
   height: 18px;
   cursor: pointer;
 }
 
-.content main .tweets-publics .tweets-conteudo .tweets-publics-icon .tweets-publics-icon-name .tweets-icon{
+.tweets-icon{
   color: var(--nomes-secundario-color);
   margin-left: 10px;
   font-size: 13px;
   cursor: pointer;
 }
 
-.tweets-conteudo .tweets-conteudo-rt{
+.tweet-conteudo-rt{
   display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(99, 106, 112, .3);
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .tweet-conteudo-rt-infos{
   display: flex;
+  margin-bottom: 3px;
 }
 
 .tweet-conteudo-rt-infos figure{
@@ -353,6 +366,90 @@ header .my-profile .infos-profile .username{
   height: 100%;
 }
 
-.tweets-conteudo-rt p{
+.tweets-conteudo-rt p{ 
   color: rgb(255, 255, 255, .8);
+}
+
+.tweet-conteudo-rt-infos .name{
+  color: var(--nomes-principal-color);
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+/* --------------------------------- SECTION TRENDING TOPICS --------------------------------- */
+
+.trending-topics{
+  position: fixed;
+  right: 0;
+  width: 30%;
+  margin: 6px 0 5px 0;
+}
+
+.trending-topics-search{
+  background-color: aqua;
+  width: 350px;
+  border-radius: 25px;
+  height: 42px;
+  background-color: rgb(21, 24, 28)
+}
+
+.trending-topics-search input{
+  width: 270px;
+  height: 40px;
+  margin-left: 50px;
+  outline: 0;
+  border: none;
+  font-size: 15px;
+  color: white;
+  background-color: rgb(21, 24, 28)
+}
+
+.trending-topics-hashtag{
+  width: 350px;
+  margin-top: 15px;
+  background-color: rgb(21, 24, 28);
+  padding: 10px 0 5px 0;
+  border-radius: 15px;
+}
+
+.trending-topics-assuntos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(99, 106, 112, .3);
+  padding: 0 15px 10px 15px;
+}
+
+.trending-topics-assuntos h1{
+  color: rgb(255, 255, 255, .8);
+  font-size: 19px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.trending-topics-assuntos img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.trending-topics-assuntos-hashtag{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(99, 106, 112, .3);
+  padding: 10px 15px 10px 15px;
+}
+
+.tpah{
+  color: var(--nomes-secundario-color);
+  cursor: pointer;
+  display: flex;
+  margin-right: 5px;
+  font-size: 13px;
+  margin-bottom: 2px;
+}
+
+.trending-topics-hashtag-footer{
+  padding: 13px 15px 13px 15px;
+  color: rgb(224, 36, 94);
 }

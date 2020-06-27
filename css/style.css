@@ -43,7 +43,7 @@ header{
 
 .content header nav{
   display: flex;
-  flex-direction: column;
+  margin-left: -15px;
 }
 
 header nav a{
@@ -52,14 +52,25 @@ header nav a{
   color: var(--nomes-principal-color);
   margin-bottom: 8px;
   font-size: 19px;
+  padding-left: 15px;
+  transition: .5s;
+}
+
+header nav li{
+  max-width: auto;
+  list-style: none;
+  transition: .5s;
+}
+
+header nav li:hover{
+  border-radius: 25px;
+  width: auto;
+  background: rgb(224, 36, 94, .1);
+  padding-right: 10px;
 }
 
 header nav a:hover{
-  border-radius: 25px;
-  width: auto;
   color: rgb(224, 36, 94);
-  /* background: rgb(224, 36, 94, .1);
-  padding: 5px; */
 }
 
 .icon-nav img{
@@ -403,11 +414,12 @@ main{
 }
 
 .trending-topics-search{
-  background-color: aqua;
   width: 350px;
   border-radius: 25px;
   height: 42px;
-  background-color: rgb(21, 24, 28)
+  background: url('../icons/search.svg') no-repeat, rgb(21, 24, 28);
+  background-size: 18px;
+  background-position: 15px 12px;
 }
 
 .trending-topics-search input{
@@ -419,6 +431,11 @@ main{
   font-size: 15px;
   color: white;
   background-color: rgb(21, 24, 28)
+}
+
+.trending-topics-search input:focus ~ .trending-topics-search{
+  background-color: black;
+  border: 1px solid rgb(224, 36, 94);
 }
 
 .trending-topics-hashtag{

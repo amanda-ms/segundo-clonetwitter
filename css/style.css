@@ -167,6 +167,12 @@ main{
   height: 50px;
   border-radius: 50%;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.photo-my-profile:hover{
+  opacity: .9;
+  transition: .3s all;
 }
 
 .photo-my-profile img{
@@ -228,6 +234,7 @@ main{
   transition: .5s background;
   font-size: 15px;
   margin-bottom: 10px;
+  opacity: 0.5;
 }
 
 /* --------------------------------- SECTION TWEETS --------------------------------- */
@@ -236,6 +243,11 @@ main{
   display: flex;
   padding: 10px 15px 0 15px;
   border-bottom: 1px solid rgb(99, 106, 112, .3);
+}
+
+.tweets-publics:hover{
+  background: rgba(31, 34, 39, 0.5);
+  transition: background .3s;
 }
 
 .tweets-publics-photo{
@@ -349,6 +361,11 @@ main{
   padding: 10px;
 }
 
+.tweet-conteudo-rt:hover{
+  background: rgba(31, 34, 39, 0.5);
+  transition: background .3s;
+}
+
 .tweet-conteudo-rt-infos{
   display: flex;
   margin-bottom: 3px;
@@ -408,7 +425,7 @@ main{
   width: 350px;
   margin-top: 15px;
   background-color: rgb(21, 24, 28);
-  padding: 10px 0 5px 0;
+  padding: 10px 0 0 0;
   border-radius: 15px;
 }
 
@@ -424,7 +441,6 @@ main{
   color: rgb(255, 255, 255, .8);
   font-size: 19px;
   font-weight: 800;
-  cursor: pointer;
 }
 
 .trending-topics-assuntos img{
@@ -438,6 +454,7 @@ main{
   flex-direction: column;
   border-bottom: 1px solid rgb(99, 106, 112, .3);
   padding: 10px 15px 10px 15px;
+  cursor: pointer;
 }
 
 .tpah{
@@ -450,6 +467,30 @@ main{
 }
 
 .trending-topics-hashtag-footer{
-  padding: 13px 15px 13px 15px;
+  padding: 13px 15px 18px 15px;
   color: rgb(224, 36, 94);
+  cursor: pointer;
+}
+
+.trending-icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trending-icon img{
+  width: 10px;
+  height: 10px;
+}
+
+.trending-topics-assuntos-hashtag:hover{
+  background: rgba(31, 34, 39, 0.8);
+  transition: background .3s;
+}
+
+.trending-topics-hashtag-footer:hover{
+  background: rgba(31, 34, 39, 0.8);
+  border-bottom-left-radius: 19px;
+  border-bottom-right-radius: 19px;
+  transition: background .3s;
 }
